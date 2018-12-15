@@ -1,0 +1,9 @@
+---
+- name: Install multiple packages
+  hosts: all
+  connection: ssh 
+  tasks: 
+    - name: Install tree package
+      package: 
+        name: tree
+        state: present              #absent           #latest         #installed     #removed

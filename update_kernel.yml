@@ -1,0 +1,9 @@
+---
+- name: Update kernel
+  hosts: all
+  ignore_errors: true
+  tasks: 
+    - name: update kernel on all
+      package:
+        name: kernel
+        state: latest 
